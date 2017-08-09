@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 ajax</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+
+
+
+    </div>
+
+
+    <script id="card-template" type="text/x-handlebars-template">
+      <div class="card" id="card">
+        <div class="well" "head" id="cardHeader">
+        <h1 id="cardName">{{ name }}</h1>
+      </div>
+      </div>
+      <div id="cardData" class="row">
+        <div class="col-md-5">
+          <div id="basic-info">
+          <h2>The Basics</h2>
+
+            <div>Name: <p> {{ name }} </p> </div>
+            <div>Github URL: <a href='{{ html_url }}'> {{ html_url }} </a> </div>
+            <div>Email: <p> {{ email }} </p> </div>
+            <div>Company: <p> Spicy Premium Limited Edition Inc. </p> </div>
+            <div>Website: <a href='{{ url }}'> {{ url }} </a> </div>
+
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div id="the-story">
+          <h2>The Story</h2>
+
+          <div>{{ bio }}</div>
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div id="profile-pic">
+            <img src="{{ avatar_url }}" alt="a handsome lad">
+          </div>
+        </div>
+      </div>
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
